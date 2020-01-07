@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>
+    
+      Data Mining Parameters | Data Science |
+    
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <!-- Use Atom -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Data Science |" />
+  <!-- Use RSS-2.0 -->
+  <!--<link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="Data Science | | blog"/>
+  //-->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      });
+  </script>
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-155095596-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <!-- Use Jekyll SEO plugin -->
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Data Mining Parameters | Data Science</title>
+<meta name="generator" content="Jekyll v3.6.3" />
+<meta property="og:title" content="Data Mining Parameters" />
+<meta name="author" content="Sudip Bhujel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Datamining covers everything that are related with the data from collection of raw data to EDA and preparation of input to AI algorithm. We have lots of parameters for describing the data. Some of them we are going to discuss are Impurity index, Central of tendency, Eigenvalue/ Eigenvector, PCA in Classification. Abstract: The impurities measurement parameter of dataset like Entropy, Gini, Classification Error aims to find the error while classifying the labels. The attribute with less value of impurity will be chosen out of attribute contenders. The measure of central tendency like mean, median, quartiles, etc. along with boxplot gives the idea about the distribution of data and outliers which leads then how to treat the data to get the most information out of it. The features/ attributes are important parameters for any machine learning algorithm, large-sized attributes result in a more accurate prediction which means that the model has high accuracy. The computational cost for a model with a large number of attributes is generally high. The best model is that which takes as least attributes as possible without losing the information and has reasonable accuracy. Principal Component Analysis (PCA) is a feature extraction method that uses orthogonal linear projections to capture the underlying variance of the data. It reduces the number of least wanted features for prediction without losing the overall information of data." />
+<meta property="og:description" content="Datamining covers everything that are related with the data from collection of raw data to EDA and preparation of input to AI algorithm. We have lots of parameters for describing the data. Some of them we are going to discuss are Impurity index, Central of tendency, Eigenvalue/ Eigenvector, PCA in Classification. Abstract: The impurities measurement parameter of dataset like Entropy, Gini, Classification Error aims to find the error while classifying the labels. The attribute with less value of impurity will be chosen out of attribute contenders. The measure of central tendency like mean, median, quartiles, etc. along with boxplot gives the idea about the distribution of data and outliers which leads then how to treat the data to get the most information out of it. The features/ attributes are important parameters for any machine learning algorithm, large-sized attributes result in a more accurate prediction which means that the model has high accuracy. The computational cost for a model with a large number of attributes is generally high. The best model is that which takes as least attributes as possible without losing the information and has reasonable accuracy. Principal Component Analysis (PCA) is a feature extraction method that uses orthogonal linear projections to capture the underlying variance of the data. It reduces the number of least wanted features for prediction without losing the overall information of data." />
+<link rel="canonical" href="http://localhost:4000/journal/data-mining-parameters.html" />
+<meta property="og:url" content="http://localhost:4000/journal/data-mining-parameters.html" />
+<meta property="og:site_name" content="Data Science" />
+<meta property="og:image" content="http://localhost:4000/data-mining-parameters.jpeg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-28T00:00:00+05:45" />
+<script type="application/ld+json">
+{"headline":"Data Mining Parameters","dateModified":"2019-12-28T00:00:00+05:45","datePublished":"2019-12-28T00:00:00+05:45","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/journal/data-mining-parameters.html"},"image":"http://localhost:4000/data-mining-parameters.jpeg","url":"http://localhost:4000/journal/data-mining-parameters.html","author":{"@type":"Person","name":"Sudip Bhujel"},"description":"Datamining covers everything that are related with the data from collection of raw data to EDA and preparation of input to AI algorithm. We have lots of parameters for describing the data. Some of them we are going to discuss are Impurity index, Central of tendency, Eigenvalue/ Eigenvector, PCA in Classification. Abstract: The impurities measurement parameter of dataset like Entropy, Gini, Classification Error aims to find the error while classifying the labels. The attribute with less value of impurity will be chosen out of attribute contenders. The measure of central tendency like mean, median, quartiles, etc. along with boxplot gives the idea about the distribution of data and outliers which leads then how to treat the data to get the most information out of it. The features/ attributes are important parameters for any machine learning algorithm, large-sized attributes result in a more accurate prediction which means that the model has high accuracy. The computational cost for a model with a large number of attributes is generally high. The best model is that which takes as least attributes as possible without losing the information and has reasonable accuracy. Principal Component Analysis (PCA) is a feature extraction method that uses orthogonal linear projections to capture the underlying variance of the data. It reduces the number of least wanted features for prediction without losing the overall information of data.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+  <div class="container">
+    <header class="masthead">
+  <h3 class="masthead-title">
+    <a href="/">Data Science |</a>
+    <small class="masthead-subtitle">blog</small>
+    <div class="menu">
+  <nav class="menu-content">
+    
+      <a href="/menu/about.html">About</a>
+    
+      <a href="/menu/writing.html">Writing</a>
+    
+      <a href="/menu/contact.html">Contact</a>
+    
+  </nav>
+  <nav class="social-icons">
+    
+  
+  
+    <a href="https://www.github.com/sudipbhujel" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/realsudipbhujel" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://www.facebook.com/sudipbhujel.np" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/sudipbhujel/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://medium.com/@sudipbhujel" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:thrivenexus@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  </nav>
+</div>
+
+  </h3>
+</header>
+
+
+    <div class="post-container">
+      <h1>
+  Data Mining Parameters
+</h1>
+
+
+  <img src="/assets/img/data-mining-parameters.jpeg">
+
+
+<p>Datamining covers everything that are related with the data from collection of raw data to EDA and preparation of input to AI algorithm. We have lots of parameters for describing the data. Some of them we are going to discuss are Impurity index, Central of tendency, Eigenvalue/ Eigenvector, PCA in Classification. <br />
+ <strong> Abstract: <i> The impurities measurement parameter of dataset
+like Entropy, Gini, Classification Error aims to find the error while classifying the labels. The attribute with less value of impurity will be chosen out of attribute contenders. The measure
+of central tendency like mean, median, quartiles, etc. along with boxplot gives the idea about the distribution of data and outliers which leads then how to treat the data to get the most information
+out of it. The features/ attributes are important parameters for any machine learning algorithm, large-sized attributes result in a more accurate prediction which means that the model has high
+accuracy. The computational cost for a model with a large number of attributes is generally high. The best model is that which takes as least attributes as possible without losing the information and has reasonable accuracy. Principal Component Analysis (PCA) is a feature extraction method that uses orthogonal linear projections to capture the underlying variance of the data. It reduces the number of least wanted features for prediction without losing the overall information of data. </i></strong></p>
+
+<h2 id="entropy">Entropy</h2>
+<p>Entropy is a measure of impurity, disorder or uncertainty in a bunch of examples i.e. it is an indicator of how messy our data is. In Decision Trees, the goal is to tidy the data. Entropy controls how a Decision Tree decides to split the data. It affects how a Decision Tree draws its boundaries so that the outcomes from the algorithm will have purely classified objects.</p>
+
+<script type="math/tex; mode=display">E(x) = \sum_{x\epsilon X} p(x)log_2 p(x)</script>
+
+<p>Where,
+S = The current dataset for which entropy is being calculated <br />
+X = Set of classes in S<br />
+p(x) = The probability of each set S</p>
+
+<p><img src="/assets/img/Impurity_vs_Probability.png" alt="Impurity vs probability" /></p>
+<p style="color:grey; text-align:center; font-style:italic"> Impurity Index versus Probability, Impurity Indices are Entropy, Gini, and Classification Error</p>
+
+<h2 id="gini">Gini</h2>
+<p>Impurity measures such as entropy and Gini index tend to favor attributes that have a large number of distinct values . If we consider the same example as in entropy, the gini index is computed using the following equation:</p>
+
+<script type="math/tex; mode=display">G(S) = 1-\sum_{x\epsilon X} |p(x)|^2</script>
+
+<p>Where,
+S = The current dataset for which entropy is being calculated <br />
+X = Set of classes in S <br />
+p(x) = The probability of each set S</p>
+
+<h2 id="classification-error">Classification Error</h2>
+<p>Classification error is a measure of impurity at a node and defined for classification error at a node t as,</p>
+
+<script type="math/tex; mode=display">Error(t) = 1 − maxP(i|t)</script>
+
+<p>The classification error made by node ranges minimum 0 when all records belong to one class to maximum <script type="math/tex">(1 − 1/n_c )</script> when records are equally distributed among all classes.</p>
+
+<h2 id="covariance-matrix">Covariance Matrix</h2>
+<p>Variance measures the variation of a single random variable
+(like the height of a person in a population), whereas covariance
+is a measure of how much two random variables vary together
+(like the height of a person and the weight of a person in a
+population). The covariance matrix can be calculated using
+covariance, which is a square matrix given by C I,j = σ(x i , x j )
+where C ∈ R d xd and d describe dimension or number of
+random variables of the data (e.g. the number of features like
+height, width, weight, etc.). The calculation for the covariance
+matrix can be also expressed as:</p>
+
+<script type="math/tex; mode=display">C = \frac{1}{n-1} \sum_{i=1} ^n (X_i-\overline{X} )(X_i-\overline{X} )^T</script>
+
+<p>The covariance matrix for two dimensions is given by,</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{pmatrix} \sigma(x,x) & \sigma(x,y) \\\ \sigma(y,x) & \sigma(y,y) \end{pmatrix} %]]></script>
+
+<p>The covariance matrix is symmetric since <script type="math/tex">\sigma(x_i, x_j) = \sigma(x_j, x_i)</script>.</p>
+
+<h2 id="eigenvalue-and-eigenvector">Eigenvalue and Eigenvector</h2>
+<p>In linear algebra, an eigenvector of a linear transformation is
+a nonzero vector that changes at most by a scalar factor when
+that linear transformation is applied to it. The corresponding
+eigenvalue is the factor by which the eigenvector is scaled. For
+linear equations:</p>
+
+<script type="math/tex; mode=display">Av = λv</script>
+
+<p>In this equation A is an n-by-n matrix, v is a non-zero n-by-1
+vector and <script type="math/tex">\lambda</script> is a scalar (which may be either real or complex).
+Any value of <script type="math/tex">\lambda</script> for which this equation has a solution is known
+as eigenvalue of the matrix A. It is sometimes also called the
+characteristics value. The vector, v, which corresponds to this
+value is called an eigenvector. The eigen problem can be written
+as</p>
+
+<script type="math/tex; mode=display">A. v − \lambda. v = 0 \\
+A. v − \lambda. I. v = 0 \\
+(A − \lambda. I). v = 0</script>
+
+<p>If v is non-zero, this equation will only have a solution if
+<script type="math/tex">|A − \lambda. I| = 0</script>
+This equation is called the characteristic equation of A, and is
+an nth order polynomial in <script type="math/tex">\lambda</script> with n roots. These roots are called
+the eigenvalues of A. We will only deal with the case of n
+distinct roots, though they may be repeated. For each
+eigenvalue, there will be an eigenvector for which the
+eigenvalue equation is true.</p>
+
+<h2 id="distances">Distances</h2>
+<p><strong>Euclidean distance</strong> is a measure of the distance between two
+points in Euclidean space. Mathematically,</p>
+
+<script type="math/tex; mode=display">dist = \sqrt{\sum_{k=1}^n (p_k - q_k)^2}</script>
+
+<p>Where n is the number of dimensions (attributes) and <script type="math/tex">p_k</script> and
+<script type="math/tex">q_k</script> are, respectively, the <script type="math/tex">k^th</script> attributes (components) or data
+objects p and q.
+<strong>Minkowski Distance </strong> is a generalization of Euclidean
+distance and given as,</p>
+
+<script type="math/tex; mode=display">dist = \left(\sum_{k=1}^n |p_k - q_k|^r \right)^{\frac{1}{r}}</script>
+
+<p>Where r is a parameter, n is the number of dimensions
+(attributes) and <script type="math/tex">p_k</script> and <script type="math/tex">q_k</script> are, respectively, the k th attributes
+(components) or data objects p and q.</p>
+<ul>
+  <li>r = 1, it becomes Manhattan distance.</li>
+  <li>r = 2, it becomes Euclidean distance.</li>
+  <li><script type="math/tex">r \to \infty</script>, it becomes supremum distance.</li>
+</ul>
+
+<h2 id="similarity">Similarity</h2>
+<p>The similarity is the measure of how much alike two data
+objects are. The similarity in a data mining context is usually
+described as a distance with dimensions representing features
+of the objects. A small distance indicating a high degree of
+similarity and a large distance indicating a low degree of
+similarity. The similarity is subjective and is highly dependent
+on the domain and application.<br />
+<strong>Cosine Similarity</strong> of two document vectors is given as,</p>
+
+<script type="math/tex; mode=display">cos(d_1, d_2) = \frac{d_1 . d_2}{||d_1||.||d_2||}</script>
+
+<p>Where ||d|| is the length of vector d.<br />
+Cosine similarity is for comparing two real-valued vectors,
+but <strong>Jaccard similarity</strong> is for comparing two binary vectors
+(sets). Mathematically,</p>
+
+<script type="math/tex; mode=display">J_g (a,b) = frac{sum_i min(a_i, b_i)}{sum_i max(a_i, b_i)}</script>
+
+<p>For example, <script type="math/tex">t_1 = (1, 1,0,1), t_2 = (2,0,1,1)</script>, the generalized
+Jaccard similarity index can be computed as follows:</p>
+
+<script type="math/tex; mode=display">J(t_1, t_2) = \frac{1+0+0+1}{2+1+1+1} = 0.4</script>
+
+<h2 id="pca">PCA</h2>
+<p>Principal Component Analysis (PCA) is a feature extraction
+method that uses orthogonal linear projections to capture the
+underlying variance of the data. The main idea of principal
+component analysis (PCA) is to reduce the dimensionality of a
+data set consisting of many variables correlated with each other,
+either heavily or lightly, while retaining the variation present in
+the dataset, up to the maximum extent. It reduces the dimension
+of the data with the aim of retaining as much information as
+possible. In other words, this method combines highly
+correlated variables to form a smaller number of an artificial set
+of variables which is called “principal components” that
+account for the most variance in the data.</p>
+
+<h2 id="conclusion">CONCLUSION</h2>
+<p>The measure of central of tendency, similarity, etc. are the
+part of Exploratory Data Analysis (EDA). The EDA itself
+doesn’t give the model for prediction but extremely useful for
+getting the sense of information from data. This gives an idea
+about how to get started with the data. Impurity indices like
+Entropy, Gini, and Classification Error in the classification
+helps examine how classification algorithm struggles to classify
+the items based on their attributes. The impurity index helps
+find the depth of the decision tree algorithm.</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li><a href="https://www.amazon.com/Introduction-Mining-Whats-Computer-Science/dp/0133128903/ref=sr_1_5?keywords=data+mining&amp;qid=1577535801&amp;sr=8-5">P. Tan, M. Steinbach, V. Kumar and A. Karpatne, Introduction to Data
+Mining, Global Edition. Harlow, United Kingdom: Pearson Education
+Limited, 2019.</a></li>
+</ul>
+
+
+<span class="post-date">
+  Written on
+  
+  December
+  28th,
+  2019
+  by
+  
+    Sudip Bhujel
+  
+</span>
+
+<div class="post-date">Feel free to share!</div>
+  <div class="sharing-icons">
+    <a href="https://twitter.com/intent/tweet?text=Data Mining Parameters&amp;url=/journal/data-mining-parameters.html" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=/journal/data-mining-parameters.html&amp;title=Data Mining Parameters" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+
+<div class="related">
+  <h1 >You may also enjoy:</h1>
+  
+  <ul class="related-posts">
+    
+      
+        
+          <li>
+            <h3>
+              <a href="/journal/knn-nb-classifier.html">
+                k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining 
+                <!--<img src="http://localhost:4000/images/">-->
+                <!--<small>January 7, 2020</small>-->
+              </a>
+            </h3>
+          </li>
+          
+        
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+  </ul>
+</div>
+
+
+
+  <section class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = "https-sudipbhujel-github-io";
+    var disqus_identifier = "/journal/data-mining-parameters.html";
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+    </div>
+
+    <footer class="footer">
+  
+  
+  
+    <a href="https://www.github.com/sudipbhujel" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/realsudipbhujel" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://www.facebook.com/sudipbhujel.np" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/sudipbhujel/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://medium.com/@sudipbhujel" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:thrivenexus@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  <div class="post-date"><a href="/menu/about.html">Data Science | | blog by Sudip Bhujel</a></div>
+</footer>
+
+  </div>
+
+</body>
+</html>

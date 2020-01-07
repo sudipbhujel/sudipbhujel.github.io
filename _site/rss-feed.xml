@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Data Science |</title>
+		<description>blog</description>
+		<link></link>
+		<atom:link href="/rss-feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining </title>
+				
+					<dc:creator>Sudip Bhujel</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Tue, 07 Jan 2020 00:00:00 +0545</pubDate>
+				<link>http://localhost:4000/journal/knn-nb-classifier.html</link>
+				<guid isPermaLink="true">http://localhost:4000/journal/knn-nb-classifier.html</guid>
+			</item>
+		
+			<item>
+				<title>Data Mining Parameters</title>
+				
+					<dc:creator>Sudip Bhujel</dc:creator>
+				
+				
+					<description>&lt;p&gt;Datamining covers everything that are related with the data from collection of raw data to EDA and preparation of input to AI algorithm. We have lots of parameters for describing the data. Some of them we are going to discuss are Impurity index, Central of tendency, Eigenvalue/ Eigenvector, PCA in Classification. &lt;br /&gt;
+ &lt;strong&gt; Abstract: &lt;i&gt; The impurities measurement parameter of dataset
+like Entropy, Gini, Classification Error aims to find the error while classifying the labels. The attribute with less value of impurity will be chosen out of attribute contenders. The measure
+of central tendency like mean, median, quartiles, etc. along with boxplot gives the idea about the distribution of data and outliers which leads then how to treat the data to get the most information
+out of it. The features/ attributes are important parameters for any machine learning algorithm, large-sized attributes result in a more accurate prediction which means that the model has high
+accuracy. The computational cost for a model with a large number of attributes is generally high. The best model is that which takes as least attributes as possible without losing the information and has reasonable accuracy. Principal Component Analysis (PCA) is a feature extraction method that uses orthogonal linear projections to capture the underlying variance of the data. It reduces the number of least wanted features for prediction without losing the overall information of data. &lt;/i&gt;&lt;/strong&gt;&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sat, 28 Dec 2019 00:00:00 +0545</pubDate>
+				<link>http://localhost:4000/journal/data-mining-parameters.html</link>
+				<guid isPermaLink="true">http://localhost:4000/journal/data-mining-parameters.html</guid>
+			</item>
+		
+			<item>
+				<title>Welcome to Lagrange!</title>
+				
+					<dc:creator>Paul Le</dc:creator>
+				
+				
+					<description>&lt;p&gt;Lagrange is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. Below you can find everything you need to get started.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Fri, 01 Jan 2016 00:00:00 +0545</pubDate>
+				<link>http://localhost:4000/journal/welcome-to-lagrange.html</link>
+				<guid isPermaLink="true">http://localhost:4000/journal/welcome-to-lagrange.html</guid>
+			</item>
+		
+			<item>
+				<title>Getting Started</title>
+				
+					<dc:creator>Paul Le</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;lagrange&quot;&gt;Lagrange&lt;/h1&gt;
+
+</description>
+				
+				<pubDate>Sat, 10 Oct 2015 00:00:00 +0545</pubDate>
+				<link>http://localhost:4000/journal/getting-started.html</link>
+				<guid isPermaLink="true">http://localhost:4000/journal/getting-started.html</guid>
+			</item>
+		
+			<item>
+				<title>Text Formatting Examples</title>
+				
+					<dc:creator>Paul Le</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;markdown-support&quot;&gt;Markdown Support&lt;/h1&gt;
+
+</description>
+				
+				<pubDate>Wed, 01 Jan 2014 00:00:00 +0545</pubDate>
+				<link>http://localhost:4000/journal/text-formatting-examples.html</link>
+				<guid isPermaLink="true">http://localhost:4000/journal/text-formatting-examples.html</guid>
+			</item>
+		
+			<item>
+				<title>Learning Resources</title>
+				
+					<dc:creator>Paul Le</dc:creator>
+				
+				
+					<description>&lt;p&gt;The beauty of computer programming is that you do not need to formally go to school to learn how to program. You can learn almost everything that you would need to know online, and for free. The following resources are some that I have used personally, that I highly recommend, for anyone looking to learn more about computer programming.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Thu, 10 Oct 2013 00:00:00 +0545</pubDate>
+				<link>http://localhost:4000/journal/learning-resources.html</link>
+				<guid isPermaLink="true">http://localhost:4000/journal/learning-resources.html</guid>
+			</item>
+		
+			<item>
+				<title>About the Author</title>
+				
+					<dc:creator>Paul Le</dc:creator>
+				
+				
+					<description>&lt;p&gt;Hi there! I’m Paul. I’m a physics major turned programmer. Ever since I first learned how to program while taking a scientific computing for physics course, I have pursued programming as a passion, and as a career. Check out &lt;a href=&quot;https://www.lenpaul.com/&quot;&gt;my personal website&lt;/a&gt; for more information on my other projects (including more Jekyll themes!), as well as some of my writing.&lt;/p&gt;
+</description>
+				
+				<pubDate>Thu, 04 Apr 2013 00:00:00 +0545</pubDate>
+				<link>http://localhost:4000/journal/about-the-author.html</link>
+				<guid isPermaLink="true">http://localhost:4000/journal/about-the-author.html</guid>
+			</item>
+		
+	</channel>
+</rss>

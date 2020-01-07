@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>
+    
+      k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining  | Data Science |
+    
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <!-- Use Atom -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Data Science |" />
+  <!-- Use RSS-2.0 -->
+  <!--<link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="Data Science | | blog"/>
+  //-->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      });
+  </script>
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-155095596-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <!-- Use Jekyll SEO plugin -->
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining | Data Science</title>
+<meta name="generator" content="Jekyll v3.6.3" />
+<meta property="og:title" content="k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining" />
+<meta name="author" content="Sudip Bhujel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result." />
+<meta property="og:description" content="Introduction Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result." />
+<link rel="canonical" href="http://localhost:4000/journal/knn-nb-classifier.html" />
+<meta property="og:url" content="http://localhost:4000/journal/knn-nb-classifier.html" />
+<meta property="og:site_name" content="Data Science" />
+<meta property="og:image" content="http://localhost:4000/knnandnaivebayes.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-07T00:00:00+05:45" />
+<script type="application/ld+json">
+{"headline":"k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining","dateModified":"2020-01-07T00:00:00+05:45","datePublished":"2020-01-07T00:00:00+05:45","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/journal/knn-nb-classifier.html"},"image":"http://localhost:4000/knnandnaivebayes.png","url":"http://localhost:4000/journal/knn-nb-classifier.html","author":{"@type":"Person","name":"Sudip Bhujel"},"description":"Introduction Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+  <div class="container">
+    <header class="masthead">
+  <h3 class="masthead-title">
+    <a href="/">Data Science |</a>
+    <small class="masthead-subtitle">blog</small>
+    <div class="menu">
+  <nav class="menu-content">
+    
+      <a href="/menu/about.html">About</a>
+    
+      <a href="/menu/writing.html">Writing</a>
+    
+      <a href="/menu/contact.html">Contact</a>
+    
+  </nav>
+  <nav class="social-icons">
+    
+  
+  
+    <a href="https://www.github.com/sudipbhujel" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/realsudipbhujel" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://www.facebook.com/sudipbhujel.np" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/sudipbhujel/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://medium.com/@sudipbhujel" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:thrivenexus@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  </nav>
+</div>
+
+  </h3>
+</header>
+
+
+    <div class="post-container">
+      <h1>
+  k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining 
+</h1>
+
+
+  <img src="/assets/img/knnandnaivebayes.png">
+
+
+<h1 id="introduction">Introduction</h1>
+<p>Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result.</p>
+
+<p>Classification, which is the task of assigning objects to one of several predefined categories, is a pervasive problem that encompasses many diverse applications. Examples include detecting spam email messages based upon the message header and content, categorizing cells as malignant or benign based upon the results of MRI scans, and classifying galaxies based upon their shapes.</p>
+
+<p>The classification problems like email is spam or not, tumor is benign or malignant, etc. are binary classification as it deals with two categories in the target class. When there are more than two categories in the target class, the classification problem resides to multilabel classification and example might be like classifying cars company based on image whether it is Honda or Volkswagen or Renault.</p>
+
+<p>The classification algorithm k-Nearest Neighbors classifier and Naïve Bayes classifier are two classifiers that better suits the classification problem. The performance metrics like Confusion matrix, Accuracy, F1 score, Precision, Recall, Heatmap, etc. gives the insight of model performance.</p>
+
+<h2 id="algorithms">Algorithms</h2>
+<p>The convention used in the derivation includes a collection of labeled examples 
+<script type="math/tex">\{(x_i,yi)\}_{i=1}^N</script>
+, where N is the size of the collection, 
+<script type="math/tex">x_i</script> is the D-dimensional feature vector of example 
+<script type="math/tex">i=1, 2, …, N</script> , <script type="math/tex">y_i</script> is a real-valued target and every feature 
+<script type="math/tex">x_i^{(j)}</script> 
+, 
+<script type="math/tex">j=1, 2, …, D</script>
+, is also a real number.</p>
+
+<h3 id="k-nearest-neighbors-classifier">k-Nearest Neighbors Classifier</h3>
+
+<p>k-Nearest Neighbors (kNN) is non parametric and instance-based learning algorithm. Contrary to other learning algorithms, it keeps all training data in memory. Once new, previously unseen example comes in, the kNN algorithm finds k training examples closest to x and returns the majority label.</p>
+
+<p>The closeness of two examples is given by a distance function. For example, Euclidean distance is frequently used in practice. Euclidean distance between 
+<script type="math/tex">x_i</script>
+ and 
+<script type="math/tex">x_k</script>
+ is given as,</p>
+
+<script type="math/tex; mode=display">d(\boldsymbol {x_i, x_k}) = \sqrt{(x_i^{(1)}-x_k^{(1)})^2 + (x_i^{(2)}-x_k^{(2)})^2 + ... + (x_i^{(N)}-x_k^{(N)})^2} \tag1</script>
+
+<p>The Euclidean distance in summation of the vector is given as;</p>
+
+<script type="math/tex; mode=display">d(\boldsymbol {x_i, x_k}) = \sqrt{\sum_{j=1}^{D}(x_i^{(j)}-x_k^{(j)})^2} \tag2</script>
+
+<p>Another popular choice of the distance function is the negative cosine similarity. Cosine similarity defined as,</p>
+
+<script type="math/tex; mode=display">s(\boldsymbol {x_i, x_k})=\frac{\sum_{j=1}^{D}x_i^{(j)}x_k^{(j)}}{\sqrt{\sum_{j=1}^{D}(x_i^{(j)})^2}\sqrt{\sum_{j=1}^{D}(x_k^{(j)})^2}} \tag3</script>
+
+
+<span class="post-date">
+  Written on
+  
+  January
+  7th,
+  2020
+  by
+  
+    Sudip Bhujel
+  
+</span>
+
+<div class="post-date">Feel free to share!</div>
+  <div class="sharing-icons">
+    <a href="https://twitter.com/intent/tweet?text=k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining &amp;url=/journal/knn-nb-classifier.html" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=/journal/knn-nb-classifier.html&amp;title=k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining " target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+
+<div class="related">
+  <h1 >You may also enjoy:</h1>
+  
+  <ul class="related-posts">
+    
+      
+        
+        
+      
+        
+          <li>
+            <h3>
+              <a href="/journal/data-mining-parameters.html">
+                Data Mining Parameters
+                <!--<img src="http://localhost:4000/images/">-->
+                <!--<small>December 28, 2019</small>-->
+              </a>
+            </h3>
+          </li>
+          
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+  </ul>
+</div>
+
+
+
+  <section class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = "https-sudipbhujel-github-io";
+    var disqus_identifier = "/journal/knn-nb-classifier.html";
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+    </div>
+
+    <footer class="footer">
+  
+  
+  
+    <a href="https://www.github.com/sudipbhujel" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://twitter.com/realsudipbhujel" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://www.facebook.com/sudipbhujel.np" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/sudipbhujel/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="https://medium.com/@sudipbhujel" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:thrivenexus@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  <div class="post-date"><a href="/menu/about.html">Data Science | | blog by Sudip Bhujel</a></div>
+</footer>
+
+  </div>
+
+</body>
+</html>
