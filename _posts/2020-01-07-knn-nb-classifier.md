@@ -210,7 +210,7 @@ F1 = \frac{recall^{-1}+precision^{-1}}{2} \tag9
 $$
 
 $$
-F1 = 2.\frac{precision.recall}{precision + recall}
+F1 = 2.\frac{precision.recall}{precision + recall} \tag{10}
 $$
 
 The general formula for positive real β, where β is chosen
@@ -218,7 +218,7 @@ such that recall is considered β times as important as precision,
 is:
 
 $$
-F_{\beta}=(1+{\beta}^2) \cdot \frac{precision \cdot recall}{({\beta}^2 \cdot precision)+recall} \tag11
+F_{\beta}=(1+{\beta}^2) \cdot \frac{precision \cdot recall}{({\beta}^2 \cdot precision)+recall} \tag{11}
 $$
 
 The equation (11) or $$ 𝐹_𝛽 $$ measures the effectiveness of a model with respect
