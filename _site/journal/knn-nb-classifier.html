@@ -53,8 +53,8 @@
 <meta property="og:title" content="k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining" />
 <meta name="author" content="Sudip Bhujel" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Introduction Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result." />
-<meta property="og:description" content="Introduction Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result." />
+<meta name="description" content="I. Introduction Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result." />
+<meta property="og:description" content="I. Introduction Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result." />
 <link rel="canonical" href="http://localhost:4000/journal/knn-nb-classifier.html" />
 <meta property="og:url" content="http://localhost:4000/journal/knn-nb-classifier.html" />
 <meta property="og:site_name" content="Data Science" />
@@ -62,7 +62,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-01-07T00:00:00+05:45" />
 <script type="application/ld+json">
-{"headline":"k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining","dateModified":"2020-01-07T00:00:00+05:45","datePublished":"2020-01-07T00:00:00+05:45","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/journal/knn-nb-classifier.html"},"image":"http://localhost:4000/knnandnaivebayes.png","url":"http://localhost:4000/journal/knn-nb-classifier.html","author":{"@type":"Person","name":"Sudip Bhujel"},"description":"Introduction Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result.","@context":"https://schema.org"}</script>
+{"headline":"k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining","dateModified":"2020-01-07T00:00:00+05:45","datePublished":"2020-01-07T00:00:00+05:45","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/journal/knn-nb-classifier.html"},"image":"http://localhost:4000/knnandnaivebayes.png","url":"http://localhost:4000/journal/knn-nb-classifier.html","author":{"@type":"Person","name":"Sudip Bhujel"},"description":"I. Introduction Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -139,7 +139,7 @@
   <img src="/assets/img/knnandnaivebayes.png">
 
 
-<h1 id="introduction">Introduction</h1>
+<h1 id="i-introduction">I. Introduction</h1>
 <p>Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result.</p>
 
 <p>Classification, which is the task of assigning objects to one of several predefined categories, is a pervasive problem that encompasses many diverse applications. Examples include detecting spam email messages based upon the message header and content, categorizing cells as malignant or benign based upon the results of MRI scans, and classifying galaxies based upon their shapes.</p>
@@ -148,7 +148,7 @@
 
 <p>The classification algorithm k-Nearest Neighbors classifier and Naïve Bayes classifier are two classifiers that better suits the classification problem. The performance metrics like Confusion matrix, Accuracy, F1 score, Precision, Recall, Heatmap, etc. gives the insight of model performance.</p>
 
-<h2 id="algorithms">Algorithms</h2>
+<h2 id="ii-algorithms">II. Algorithms</h2>
 <p>The convention used in the derivation includes a collection of labeled examples 
 <script type="math/tex">\{(x_i,yi)\}_{i=1}^N</script>
 , where N is the size of the collection, 
@@ -159,7 +159,7 @@
 <script type="math/tex">j=1, 2, …, D</script>
 , is also a real number.</p>
 
-<h3 id="k-nearest-neighbors-classifier">k-Nearest Neighbors Classifier</h3>
+<h3 id="a-k-nearest-neighbors-classifier">A. k-Nearest Neighbors Classifier</h3>
 
 <p>k-Nearest Neighbors (kNN) is non parametric and instance-based learning algorithm. Contrary to other learning algorithms, it keeps all training data in memory. Once new, previously unseen example comes in, the kNN algorithm finds k training examples closest to x and returns the majority label.</p>
 
@@ -178,6 +178,389 @@
 <p>Another popular choice of the distance function is the negative cosine similarity. Cosine similarity defined as,</p>
 
 <script type="math/tex; mode=display">s(\boldsymbol {x_i, x_k})=\frac{\sum_{j=1}^{D}x_i^{(j)}x_k^{(j)}}{\sqrt{\sum_{j=1}^{D}(x_i^{(j)})^2}\sqrt{\sum_{j=1}^{D}(x_k^{(j)})^2}} \tag3</script>
+
+<p>The Equation (3) gives a measure of similarity of the
+directions of the two vectors and <script type="math/tex">𝑠(\boldsymbol {x_i, x_k})</script> can also be denoted
+as <script type="math/tex">cos(\boldsymbol{x_i, x_k})</script>
+). If the angle between two vectors is <script type="math/tex">0</script> degrees,
+then two vectors point to the same direction, and cosine
+similarity is equal to <script type="math/tex">1</script>. If the vectors are orthogonal, the cosine
+similarity is <script type="math/tex">0</script>. For vectors pointing in opposite directions, the
+cosine similarity is <script type="math/tex">−1</script>. If we want to use cosine similarity as a
+distance metric, we need to multiply it by <script type="math/tex">−1</script>. Other popular
+distance metrics include Minkowski distance, Chebychev
+distance, Mahalanobis distance, and Hamming distance. The
+choice of the distance metric, as well as the value for k, are the
+choices the analyst makes before running the algorithm.
+The k-NN classifier starts with loading the data into memory.
+The value of k (number of neighbors) defines the prediction
+boundaries that means how much sorted distances are taken into
+account to find the mode of the k labels. The algorithm takes
+votes to classify the labels among selected k-neighbors. It
+returns the majority class labels leaving behind minority. The
+flowchart of the k-NN classifier is;</p>
+
+<p align="center"><img src="/assets/img/datamining-KNN.png" alt="datamining-knn" style="height: 50rem;" /></p>
+<p style="color:grey; text-align:center; font-style:italic"> Fig. 1.1: k-NN flowchart</p>
+
+<p>The selection of the hyperparameter k has a significant effect
+on the classifier. In general, for the lower value of k, the
+classifier may overfit on new unseen data. The value of k is
+chosen such that balances bias and variance. When k is small,
+we are restraining the region of a given prediction and forcing
+our classifier to be “more blind” to the overall distribution. A
+small value for K provides the most flexible fit, which will have
+low bias but high variance. Graphically, our decision boundary
+will be more jagged. On the other hand, a higher k averages
+more voters in each prediction and hence is more resilient to
+outliers. Larger values of k will have smoother decision
+boundaries which means lower variance but increased bias.
+The value of k is chosen such that the desired accuracy of kNN classifier is achieved. The simple method to calculate the
+value of k is plotting error versus k graph and choosing the k on
+which error is minimum.</p>
+
+<h3 id="b-naïve-bayes-classifier">B. Naïve Bayes Classifier</h3>
+<p>Bayes’ Rule or Bayes’ Theorem is a statistical principle for
+combining prior knowledge of the classes with new evidence
+gathered from data. The class-conditional probability 𝑃(𝑋|𝑌),
+and the evidence, P(X):The Bayes’ Rule (also known as the
+Bayes’ Theorem) stipulates that:</p>
+
+<script type="math/tex; mode=display">P(𝑌|\boldsymbol{X}) = \frac{P(\boldsymbol{X}|𝑌) P(𝑌)}
+{P(\boldsymbol{X})}
+\tag4</script>
+
+<p>In Bayes’ rule (4), it finds the probability of event 𝑌, given
+that the event 𝑋 is true. Event 𝑋 is also termed as evidence.
+𝑃(𝑌) is the priori of 𝑌 (the prior probability, i.e. Probability of
+event before evidence is seen). 𝑃(𝑌|𝑿) is a posteriori
+probability of 𝑋, i.e. probability of event after evidence is seen.
+A Naïve Bayes classifier estimates the class-conditional
+probability by assuming that the attributes are conditionally
+independent, given the class label 𝑦. Here, 𝑃(𝑿) is a class
+probability and 𝑃(𝑿|𝑦) is a conditional probability. The
+conditional independence assumption can be formally stated as
+follows:</p>
+
+<script type="math/tex; mode=display">𝑃(\boldsymbol{X}|𝑌 = 𝑦) = \prod_{i=1}^d𝑃(𝑋_𝑖|𝑌 = 𝑦)\tag5</script>
+
+<p>Where each attribute set <script type="math/tex">\boldsymbol{X} = \{𝑋_1
+,𝑋_2, … ,𝑋_𝑑\}</script> consists of d
+attributes.
+The Naïve Bayes is also called Simple Bayes as it assumes
+that features of a measurement are independent of each other
+and makes equal contribution to the outcome.</p>
+
+<h2 id="iii-metrics">III. METRICS</h2>
+<p>The classifier model doesn’t always give the accurate result.
+There are some parameters to measure how the classifier
+behave with unseen data to classify like Confusion matrix,
+Accuracy, F1 score, Precision, Recall, Heatmap etc. The
+different evaluation metrics are used for different kinds of
+problems. We build a model, get feedback from metrics, make
+improvements and continue until we achieve a desirable
+accuracy. Evaluation metrics explain the performance of a
+model. An important aspect of evaluation metrics is their
+capability to discriminate among model results.</p>
+
+<h3 id="a-confusion-matrix">A. Confusion Matrix</h3>
+<p>The confusion matrix is a table that summarizes how
+successful the classification model is at predicting examples
+belonging to various classes. One axis of the confusion matrix
+is the label that the model predicted, and the other axis is the
+actual label. In a binary classification problem, there are two
+classes. Let’s say, the model predicts two classes: “spam” and
+“not_spam”:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array} {|r|r|}\hline  & & spam (predicted) & not_spam(predicted) \\ \hline & spam (actual)& 23 (TP) & 1 (FN) \\ \hline & not_spam (actual) & 12 (FP) & 556(TN) \\ \hline  \end{array} %]]></script>
+
+<p>The above confusion matrix shows that of the 24 examples
+that actually were spam, the model correctly classified 23 as
+spam. In this case, we say that we have 23 true positives or TP
+= 23. The model incorrectly classified 1 example as not_spam.
+In this case, we have 1 false negative, or FN = 1. Similarly, of
+568 examples that actually were not spam, 556 were correctly
+classified (556 true negatives or TN = 556), and 12 were
+incorrectly classified (12 false positives, FP = 12).</p>
+
+<h3 id="b-precisionrecall">B. Precision/Recall</h3>
+<p>The two most frequently used metrics to assess the model are
+precision and recall. Precision is the ratio of correct positive
+predictions to the overall number of positive predictions:</p>
+
+<script type="math/tex; mode=display">precision = \frac{𝑇𝑃}{𝑇𝑃 + 𝐹𝑃}\tag6</script>
+
+<p>Recall is the ratio of correct predictions to the overall number
+of positive examples in the datasets:</p>
+
+<script type="math/tex; mode=display">recall = \frac{𝑇𝑃}{TP+FN} \tag7</script>
+
+<p>In the case of the spam detection problem, we want to have
+high precision (we want to avoid making mistakes by detecting
+that a legitimate message is spam) and we are ready to tolerate
+lower recall (we tolerate some spam messages in our inbox).
+The goal of classifier model is to choose between a high
+precision or a high recall. It’s usually impossible to have both.
+The hyperparameter tuning helps to maximize precision or
+recall.</p>
+
+<h3 id="c-accuracy">C. Accuracy</h3>
+<p>Accuracy is given by the number of correctly classified
+examples divided by the total number of classified examples. In
+terms of the confusion matrix, it is given by:</p>
+
+<script type="math/tex; mode=display">accuracy = \frac{TP+TN}{TP+TN+FP+FN} \tag8</script>
+
+<p>Accuracy is a useful metric when errors in predicting all
+classes are equally important.</p>
+
+<h3 id="d-f1-score">D. F1 Score</h3>
+<p>F1-Score is the harmonic mean of precision and recall values
+for a classification problem. The formula for F1-Score is as
+follows:</p>
+
+<script type="math/tex; mode=display">F1 = \frac{recall^{-1}+precision^{-1}}{2} \tag9</script>
+
+<script type="math/tex; mode=display">F1 = 2.\frac{precision.recall}{precision + recall}</script>
+
+<p>The general formula for positive real β, where β is chosen
+such that recall is considered β times as important as precision,
+is:</p>
+
+<script type="math/tex; mode=display">F_{\beta}=(1+{\beta}^2) \cdot \frac{precision \cdot recall}{({\beta}^2 \cdot precision)+recall} \tag11</script>
+
+<p>The equation (11) or <script type="math/tex">𝐹_𝛽</script> measures the effectiveness of a model with respect
+to a user who attaches β times as much importance to recall as precision.</p>
+
+<h3 id="e-heat-map">E. Heat Map</h3>
+<p>The heat map can be elucidated as a cross table or spreadsheet
+which contains colors instead of numbers. The default color
+gradient sets the lowest value in the heat map to dark blue, the
+highest value to a bright red, and mid-range values to light gray,
+with a corresponding transition (or gradient) between these
+extremes. Heat maps are well-suited for visualizing large
+amounts of multi-dimensional data and can be used to identify
+clusters of rows with similar values, as these are displayed as
+areas of similar color.</p>
+
+<h2 id="iv-result">IV. RESULT</h2>
+<p>The value of hyperparameter like k in the k-NN classifier
+plays a significant role to correctly classify the labels or target
+variables. The error versus k values plot provides a guideline to
+choose k and the value of k with minimum error is chosen.</p>
+
+<p><img src="/assets/img/k_value_vs_error.png" alt="errorvsk" /></p>
+<p style="color:grey; text-align:center; font-style:italic"> Fig. 5.1: Error versus K-value</p>
+
+<p>Fig. 5. 1 shows the fluctuation of error at different values of
+k and the graph is not continuous. We would rather prefer to
+calculate minimum error k-value than maximum error k-value
+as minimum error k-value gives more accurate prediction. The
+minimum error of k-NN classifier model for test set is at 𝑘 =
+12 and the error is 0.0467 (i.e. 4.67%). Hence, 𝑘 = 12 is chosen
+as k-value for k-NN classifier. The performance metrics of kNN classifier with parameters metric as ‘minkowski’,
+neighbors as ‘12’are:</p>
+
+<p>Confusion matrix: [[136 6] <br />
+$\qquad$ $\qquad$ $\qquad$ [8 150]],<br />
+Precision for label ‘0’ prediction: 0.94, <br />
+Precision for label ‘1’ prediction: 0.96, <br />
+Recall for label ‘0’ prediction: 0.96, <br />
+Recall for label ‘1’ prediction: 0.95, <br />
+F1-score for label ‘0’ prediction: 142, <br />
+F1-score for label ‘1’ prediction: 158, <br />
+Accuracy: 0.95 <br />
+The model has classified the labels with 𝑇𝑃 = 136,𝐹𝑁 =
+6, 𝐹𝑃 = 8, 𝑇𝑁 = 150 that means model misclassified 6 labels
+as label ‘1’ which is actually label ‘0’ and misclassified 8 labels as label ‘0’ which is actually label ‘1’. Hence, the model has an accuracy of about 95%.</p>
+
+<p><img src="/assets/img/heat_map.jpg" alt="heatmap" /></p>
+<p style="color:grey; text-align:center; font-style:italic"> Fig. 5.2: Heat map predicted label over the true label</p>
+
+<p>Fig. 5. 2 Heat map predicted label over the true label
+Heat map is a graphical representation of value in the
+confusion matrix obtained from the predicted label and actual
+target name. In the above heatmap, the red square denotes the
+maximum value on the confusion matrix and with a decrease in
+value the color fades up. Diagonal elements have a higher value
+as shown in the heatmap which shows a higher performance of
+the classification model and informs predicated label matches
+the true label for any given input.</p>
+
+<p>For the given model, “prime minister of nepal” supplied as
+input assign a label “talk.politics.mideast” similarly , when
+“joker” is supplied as input assign a label
+“comp.sys.ibm.pc.hardware”. Here for two different input two
+different label has been assigned out of which one label
+assigned for the input “prime minister of nepal” is correct
+whereas for “joker” correct label has not been assigned
+properly which is due to naïve base treating the input as
+independent values as well as lack of data being supplied.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>The two popular classifiers k-NN and Naïve Bayes provide
+good accuracy to the model. Many parameters contribute to
+model performance. The right choice of hyperparameter also
+yields a better result. There is no rule of thumb to select the right
+value of hyperparameter for the first trial and the
+hyperparameter value that works fine for one model may not
+yield the same result for another model. The good model is that
+which considers all the performance metric parameters like
+Accuracy, F1-score, Precision, Recall, etc. Though we have so
+many metrics parameters to evaluate the model performance,
+some analytics is needed to better explain the metric that
+addresses classification problems in the best possible way. The
+contribution of all performance metrics needs to be analyzed to
+make the model accurate.</p>
+
+<h2 id="appendix">Appendix</h2>
+<h3 id="a-k-nn-classifier">A. k-NN classifier</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Importing the libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span>
+<span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">accuracy_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="c"># Importing the dataset</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'datasets/Dataset_1.csv'</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c"># Quick look at data</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c"># Standardizing the variables</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">scaler</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s">'TARGET CLASS'</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">scaled_features</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s">'TARGET</span><span class="err">
+</span><span class="s">CLASS'</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">df_feat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">scaled_features</span><span class="p">,</span>
+<span class="n">columns</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c"># After standardization</span>
+<span class="k">print</span><span class="p">(</span><span class="n">df_feat</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+<span class="c"># train test split</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+ <span class="n">scaled_features</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s">'TARGET CLASS'</span><span class="p">],</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
+<span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c"># Initializing error and k_value list</span>
+<span class="n">error</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">k_value</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">40</span><span class="p">):</span>
+    <span class="n">k_value</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c"># Using KNN</span>
+    <span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">))</span>
+    <span class="n">pred</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+    <span class="n">error_</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>
+    <span class="n">error</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">error_</span><span class="p">)</span>
+
+<span class="c"># Plotting k_value and error</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">k_value</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'K value'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'Error'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s">'k_value_vs_erro.png'</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+<span class="n">bbox_inches</span><span class="o">=</span><span class="s">"tight"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">performance_report</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span>
+<span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+    <span class="c"># k-NN classifier</span>
+    <span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="n">n_neighbors</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">))</span>
+    <span class="n">pred</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+    <span class="n">confusion_matrix_</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>
+    <span class="n">classification_report_</span> <span class="o">=</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">{</span>
+    <span class="s">'confusion_matrix'</span><span class="p">:</span> <span class="n">confusion_matrix_</span><span class="p">,</span>
+    <span class="s">'classification_report'</span><span class="p">:</span> <span class="n">classification_report_</span>
+ <span class="p">}</span>
+
+<span class="c"># to numpy</span>
+<span class="n">error_np</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+<span class="n">k_value_np</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">k_value</span><span class="p">)</span>
+<span class="n">error_min_index</span> <span class="o">=</span> <span class="n">error_np</span><span class="o">.</span><span class="n">argmin</span><span class="p">()</span><span class="o">.</span><span class="n">item</span><span class="p">()</span> <span class="c"># numpy int to</span>
+<span class="n">python</span> <span class="nb">int</span>
+<span class="n">k_value_</span> <span class="o">=</span> <span class="n">k_value_np</span><span class="p">[</span><span class="n">error_min_index</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'K= {} and error= {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k_value_</span><span class="p">,</span>
+<span class="n">error_np</span><span class="p">[</span><span class="n">k_value_</span><span class="p">]))</span>
+
+<span class="c"># for minimum error</span>
+<span class="n">performance_report_</span> <span class="o">=</span> <span class="n">performance_report</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span>
+<span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">n_neighbors</span><span class="o">=</span><span class="n">k_value_</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">'For k = {}: </span><span class="se">\n</span><span class="s"> {}{}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k_value_</span><span class="p">,</span>
+<span class="n">performance_report_</span><span class="p">[</span><span class="s">'confusion_matrix'</span><span class="p">],</span>
+<span class="n">performance_report_</span><span class="p">[</span><span class="s">'classification_report'</span><span class="p">]))</span>
+</code></pre></div></div>
+
+<h3 id="b-naïve-bayes-classifier-1">B. Naïve Bayes classifier</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Importing the libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
+<span class="k">from</span> <span class="n">sklearn</span><span class="o">.</span><span class="n">datasets</span> <span class="n">impor</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">fetch_20newsgroups</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">MultinomialNB</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">make_pipeline</span>
+
+<span class="c"># importing the dataset</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">fetch_20newsgroups</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">target_names</span><span class="p">)</span>
+
+<span class="c"># training the data on these categories</span>
+<span class="n">categories</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">target_names</span>
+<span class="n">train</span> <span class="o">=</span> <span class="n">fetch_20newsgroups</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s">'train'</span><span class="p">,</span>
+<span class="n">categories</span><span class="o">=</span><span class="n">categories</span><span class="p">)</span>
+<span class="n">test</span> <span class="o">=</span> <span class="n">fetch_20newsgroups</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s">'test'</span><span class="p">,</span>
+<span class="n">categories</span><span class="o">=</span><span class="n">categories</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+
+<span class="c"># Pipelining the model</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">TfidfVectorizer</span><span class="p">(),</span>
+<span class="n">MultinomialNB</span><span class="p">())</span>
+
+<span class="c"># Fitting the data</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">train</span><span class="o">.</span><span class="n">target</span><span class="p">)</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+<span class="c"># heatmap</span>
+<span class="n">mat</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">test</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">mat</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s">'d'</span><span class="p">,</span>
+<span class="n">cbar</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">yticklabels</span><span class="o">=</span><span class="n">train</span><span class="o">.</span><span class="n">target_names</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'true label'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'predicted label'</span><span class="p">)</span>
+<span class="c"># plt.tight_layout()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s">'images/lab04/heat_map.jpg'</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+<span class="n">bbox_inches</span><span class="o">=</span><span class="s">"tight"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c"># predicting</span>
+<span class="k">def</span> <span class="nf">predict_category</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">train</span><span class="o">=</span><span class="n">train</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">):</span>
+    <span class="n">pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">([</span><span class="n">s</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">train</span><span class="o">.</span><span class="n">target_names</span><span class="p">[</span><span class="n">pred</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+
+<span class="c"># prediction</span>
+<span class="k">print</span><span class="p">(</span><span class="n">predict_category</span><span class="p">(</span><span class="s">'Jesus christ'</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">predict_category</span><span class="p">(</span><span class="s">'Prime minister of Nepal'</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">predict_category</span><span class="p">(</span><span class="s">'Everest'</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>P. Tan, M. Steinbach, V. Kumar and A. Karpatne, Introduction to Data
+Mining, Global Edition. Harlow, United Kingdom: Pearson Education
+Limited, 2019.</li>
+  <li>A. Burkov, The hundred-page machine learning book, Global Edition.
+Quebec City, Canada, 2019.</li>
+</ul>
 
 
 <span class="post-date">

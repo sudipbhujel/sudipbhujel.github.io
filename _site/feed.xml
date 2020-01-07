@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-07T18:26:19+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Data Science |</title><subtitle>blog</subtitle><author><name>Sudip Bhujel</name></author><entry><title type="html">k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining</title><link href="http://localhost:4000/journal/knn-nb-classifier.html" rel="alternate" type="text/html" title="k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining " /><published>2020-01-07T00:00:00+05:45</published><updated>2020-01-07T00:00:00+05:45</updated><id>http://localhost:4000/journal/knn-nb-classifier</id><content type="html" xml:base="http://localhost:4000/journal/knn-nb-classifier.html">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-07T20:01:51+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Data Science |</title><subtitle>blog</subtitle><author><name>Sudip Bhujel</name></author><entry><title type="html">k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining</title><link href="http://localhost:4000/journal/knn-nb-classifier.html" rel="alternate" type="text/html" title="k-Nearest Neighbors classifier, Naïve Bayes classifier in Data Mining " /><published>2020-01-07T00:00:00+05:45</published><updated>2020-01-07T00:00:00+05:45</updated><id>http://localhost:4000/journal/knn-nb-classifier</id><content type="html" xml:base="http://localhost:4000/journal/knn-nb-classifier.html">&lt;h1 id=&quot;i-introduction&quot;&gt;I. Introduction&lt;/h1&gt;
 &lt;p&gt;Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result.&lt;/p&gt;
 
 &lt;p&gt;Classification, which is the task of assigning objects to one of several predefined categories, is a pervasive problem that encompasses many diverse applications. Examples include detecting spam email messages based upon the message header and content, categorizing cells as malignant or benign based upon the results of MRI scans, and classifying galaxies based upon their shapes.&lt;/p&gt;
@@ -7,7 +7,7 @@
 
 &lt;p&gt;The classification algorithm k-Nearest Neighbors classifier and Naïve Bayes classifier are two classifiers that better suits the classification problem. The performance metrics like Confusion matrix, Accuracy, F1 score, Precision, Recall, Heatmap, etc. gives the insight of model performance.&lt;/p&gt;
 
-&lt;h2 id=&quot;algorithms&quot;&gt;Algorithms&lt;/h2&gt;
+&lt;h2 id=&quot;ii-algorithms&quot;&gt;II. Algorithms&lt;/h2&gt;
 &lt;p&gt;The convention used in the derivation includes a collection of labeled examples 
 &lt;script type=&quot;math/tex&quot;&gt;\{(x_i,yi)\}_{i=1}^N&lt;/script&gt;
 , where N is the size of the collection, 
@@ -18,7 +18,7 @@
 &lt;script type=&quot;math/tex&quot;&gt;j=1, 2, …, D&lt;/script&gt;
 , is also a real number.&lt;/p&gt;
 
-&lt;h3 id=&quot;k-nearest-neighbors-classifier&quot;&gt;k-Nearest Neighbors Classifier&lt;/h3&gt;
+&lt;h3 id=&quot;a-k-nearest-neighbors-classifier&quot;&gt;A. k-Nearest Neighbors Classifier&lt;/h3&gt;
 
 &lt;p&gt;k-Nearest Neighbors (kNN) is non parametric and instance-based learning algorithm. Contrary to other learning algorithms, it keeps all training data in memory. Once new, previously unseen example comes in, the kNN algorithm finds k training examples closest to x and returns the majority label.&lt;/p&gt;
 
@@ -36,7 +36,390 @@
 
 &lt;p&gt;Another popular choice of the distance function is the negative cosine similarity. Cosine similarity defined as,&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;s(\boldsymbol {x_i, x_k})=\frac{\sum_{j=1}^{D}x_i^{(j)}x_k^{(j)}}{\sqrt{\sum_{j=1}^{D}(x_i^{(j)})^2}\sqrt{\sum_{j=1}^{D}(x_k^{(j)})^2}} \tag3&lt;/script&gt;</content><author><name>Sudip Bhujel</name></author><category term="datamining" /><category term="datascience" /><category term="machinelearning" /><summary type="html">Introduction Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/knnandnaivebayes.png" /></entry><entry><title type="html">Data Mining Parameters</title><link href="http://localhost:4000/journal/data-mining-parameters.html" rel="alternate" type="text/html" title="Data Mining Parameters" /><published>2019-12-28T00:00:00+05:45</published><updated>2019-12-28T00:00:00+05:45</updated><id>http://localhost:4000/journal/data-mining-parameters</id><content type="html" xml:base="http://localhost:4000/journal/data-mining-parameters.html">&lt;p&gt;Datamining covers everything that are related with the data from collection of raw data to EDA and preparation of input to AI algorithm. We have lots of parameters for describing the data. Some of them we are going to discuss are Impurity index, Central of tendency, Eigenvalue/ Eigenvector, PCA in Classification. &lt;br /&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;s(\boldsymbol {x_i, x_k})=\frac{\sum_{j=1}^{D}x_i^{(j)}x_k^{(j)}}{\sqrt{\sum_{j=1}^{D}(x_i^{(j)})^2}\sqrt{\sum_{j=1}^{D}(x_k^{(j)})^2}} \tag3&lt;/script&gt;
+
+&lt;p&gt;The Equation (3) gives a measure of similarity of the
+directions of the two vectors and &lt;script type=&quot;math/tex&quot;&gt;𝑠(\boldsymbol {x_i, x_k})&lt;/script&gt; can also be denoted
+as &lt;script type=&quot;math/tex&quot;&gt;cos(\boldsymbol{x_i, x_k})&lt;/script&gt;
+). If the angle between two vectors is &lt;script type=&quot;math/tex&quot;&gt;0&lt;/script&gt; degrees,
+then two vectors point to the same direction, and cosine
+similarity is equal to &lt;script type=&quot;math/tex&quot;&gt;1&lt;/script&gt;. If the vectors are orthogonal, the cosine
+similarity is &lt;script type=&quot;math/tex&quot;&gt;0&lt;/script&gt;. For vectors pointing in opposite directions, the
+cosine similarity is &lt;script type=&quot;math/tex&quot;&gt;−1&lt;/script&gt;. If we want to use cosine similarity as a
+distance metric, we need to multiply it by &lt;script type=&quot;math/tex&quot;&gt;−1&lt;/script&gt;. Other popular
+distance metrics include Minkowski distance, Chebychev
+distance, Mahalanobis distance, and Hamming distance. The
+choice of the distance metric, as well as the value for k, are the
+choices the analyst makes before running the algorithm.
+The k-NN classifier starts with loading the data into memory.
+The value of k (number of neighbors) defines the prediction
+boundaries that means how much sorted distances are taken into
+account to find the mode of the k labels. The algorithm takes
+votes to classify the labels among selected k-neighbors. It
+returns the majority class labels leaving behind minority. The
+flowchart of the k-NN classifier is;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/assets/img/datamining-KNN.png&quot; alt=&quot;datamining-knn&quot; style=&quot;height: 50rem;&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;color:grey; text-align:center; font-style:italic&quot;&gt; Fig. 1.1: k-NN flowchart&lt;/p&gt;
+
+&lt;p&gt;The selection of the hyperparameter k has a significant effect
+on the classifier. In general, for the lower value of k, the
+classifier may overfit on new unseen data. The value of k is
+chosen such that balances bias and variance. When k is small,
+we are restraining the region of a given prediction and forcing
+our classifier to be “more blind” to the overall distribution. A
+small value for K provides the most flexible fit, which will have
+low bias but high variance. Graphically, our decision boundary
+will be more jagged. On the other hand, a higher k averages
+more voters in each prediction and hence is more resilient to
+outliers. Larger values of k will have smoother decision
+boundaries which means lower variance but increased bias.
+The value of k is chosen such that the desired accuracy of kNN classifier is achieved. The simple method to calculate the
+value of k is plotting error versus k graph and choosing the k on
+which error is minimum.&lt;/p&gt;
+
+&lt;h3 id=&quot;b-naïve-bayes-classifier&quot;&gt;B. Naïve Bayes Classifier&lt;/h3&gt;
+&lt;p&gt;Bayes’ Rule or Bayes’ Theorem is a statistical principle for
+combining prior knowledge of the classes with new evidence
+gathered from data. The class-conditional probability 𝑃(𝑋|𝑌),
+and the evidence, P(X):The Bayes’ Rule (also known as the
+Bayes’ Theorem) stipulates that:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P(𝑌|\boldsymbol{X}) = \frac{P(\boldsymbol{X}|𝑌) P(𝑌)}
+{P(\boldsymbol{X})}
+\tag4&lt;/script&gt;
+
+&lt;p&gt;In Bayes’ rule (4), it finds the probability of event 𝑌, given
+that the event 𝑋 is true. Event 𝑋 is also termed as evidence.
+𝑃(𝑌) is the priori of 𝑌 (the prior probability, i.e. Probability of
+event before evidence is seen). 𝑃(𝑌|𝑿) is a posteriori
+probability of 𝑋, i.e. probability of event after evidence is seen.
+A Naïve Bayes classifier estimates the class-conditional
+probability by assuming that the attributes are conditionally
+independent, given the class label 𝑦. Here, 𝑃(𝑿) is a class
+probability and 𝑃(𝑿|𝑦) is a conditional probability. The
+conditional independence assumption can be formally stated as
+follows:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;𝑃(\boldsymbol{X}|𝑌 = 𝑦) = \prod_{i=1}^d𝑃(𝑋_𝑖|𝑌 = 𝑦)\tag5&lt;/script&gt;
+
+&lt;p&gt;Where each attribute set &lt;script type=&quot;math/tex&quot;&gt;\boldsymbol{X} = \{𝑋_1
+,𝑋_2, … ,𝑋_𝑑\}&lt;/script&gt; consists of d
+attributes.
+The Naïve Bayes is also called Simple Bayes as it assumes
+that features of a measurement are independent of each other
+and makes equal contribution to the outcome.&lt;/p&gt;
+
+&lt;h2 id=&quot;iii-metrics&quot;&gt;III. METRICS&lt;/h2&gt;
+&lt;p&gt;The classifier model doesn’t always give the accurate result.
+There are some parameters to measure how the classifier
+behave with unseen data to classify like Confusion matrix,
+Accuracy, F1 score, Precision, Recall, Heatmap etc. The
+different evaluation metrics are used for different kinds of
+problems. We build a model, get feedback from metrics, make
+improvements and continue until we achieve a desirable
+accuracy. Evaluation metrics explain the performance of a
+model. An important aspect of evaluation metrics is their
+capability to discriminate among model results.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-confusion-matrix&quot;&gt;A. Confusion Matrix&lt;/h3&gt;
+&lt;p&gt;The confusion matrix is a table that summarizes how
+successful the classification model is at predicting examples
+belonging to various classes. One axis of the confusion matrix
+is the label that the model predicted, and the other axis is the
+actual label. In a binary classification problem, there are two
+classes. Let’s say, the model predicts two classes: “spam” and
+“not_spam”:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array} {|r|r|}\hline  &amp; &amp; spam (predicted) &amp; not_spam(predicted) \\ \hline &amp; spam (actual)&amp; 23 (TP) &amp; 1 (FN) \\ \hline &amp; not_spam (actual) &amp; 12 (FP) &amp; 556(TN) \\ \hline  \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;The above confusion matrix shows that of the 24 examples
+that actually were spam, the model correctly classified 23 as
+spam. In this case, we say that we have 23 true positives or TP
+= 23. The model incorrectly classified 1 example as not_spam.
+In this case, we have 1 false negative, or FN = 1. Similarly, of
+568 examples that actually were not spam, 556 were correctly
+classified (556 true negatives or TN = 556), and 12 were
+incorrectly classified (12 false positives, FP = 12).&lt;/p&gt;
+
+&lt;h3 id=&quot;b-precisionrecall&quot;&gt;B. Precision/Recall&lt;/h3&gt;
+&lt;p&gt;The two most frequently used metrics to assess the model are
+precision and recall. Precision is the ratio of correct positive
+predictions to the overall number of positive predictions:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;precision = \frac{𝑇𝑃}{𝑇𝑃 + 𝐹𝑃}\tag6&lt;/script&gt;
+
+&lt;p&gt;Recall is the ratio of correct predictions to the overall number
+of positive examples in the datasets:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;recall = \frac{𝑇𝑃}{TP+FN} \tag7&lt;/script&gt;
+
+&lt;p&gt;In the case of the spam detection problem, we want to have
+high precision (we want to avoid making mistakes by detecting
+that a legitimate message is spam) and we are ready to tolerate
+lower recall (we tolerate some spam messages in our inbox).
+The goal of classifier model is to choose between a high
+precision or a high recall. It’s usually impossible to have both.
+The hyperparameter tuning helps to maximize precision or
+recall.&lt;/p&gt;
+
+&lt;h3 id=&quot;c-accuracy&quot;&gt;C. Accuracy&lt;/h3&gt;
+&lt;p&gt;Accuracy is given by the number of correctly classified
+examples divided by the total number of classified examples. In
+terms of the confusion matrix, it is given by:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;accuracy = \frac{TP+TN}{TP+TN+FP+FN} \tag8&lt;/script&gt;
+
+&lt;p&gt;Accuracy is a useful metric when errors in predicting all
+classes are equally important.&lt;/p&gt;
+
+&lt;h3 id=&quot;d-f1-score&quot;&gt;D. F1 Score&lt;/h3&gt;
+&lt;p&gt;F1-Score is the harmonic mean of precision and recall values
+for a classification problem. The formula for F1-Score is as
+follows:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F1 = \frac{recall^{-1}+precision^{-1}}{2} \tag9&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F1 = 2.\frac{precision.recall}{precision + recall}&lt;/script&gt;
+
+&lt;p&gt;The general formula for positive real β, where β is chosen
+such that recall is considered β times as important as precision,
+is:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F_{\beta}=(1+{\beta}^2) \cdot \frac{precision \cdot recall}{({\beta}^2 \cdot precision)+recall} \tag11&lt;/script&gt;
+
+&lt;p&gt;The equation (11) or &lt;script type=&quot;math/tex&quot;&gt;𝐹_𝛽&lt;/script&gt; measures the effectiveness of a model with respect
+to a user who attaches β times as much importance to recall as precision.&lt;/p&gt;
+
+&lt;h3 id=&quot;e-heat-map&quot;&gt;E. Heat Map&lt;/h3&gt;
+&lt;p&gt;The heat map can be elucidated as a cross table or spreadsheet
+which contains colors instead of numbers. The default color
+gradient sets the lowest value in the heat map to dark blue, the
+highest value to a bright red, and mid-range values to light gray,
+with a corresponding transition (or gradient) between these
+extremes. Heat maps are well-suited for visualizing large
+amounts of multi-dimensional data and can be used to identify
+clusters of rows with similar values, as these are displayed as
+areas of similar color.&lt;/p&gt;
+
+&lt;h2 id=&quot;iv-result&quot;&gt;IV. RESULT&lt;/h2&gt;
+&lt;p&gt;The value of hyperparameter like k in the k-NN classifier
+plays a significant role to correctly classify the labels or target
+variables. The error versus k values plot provides a guideline to
+choose k and the value of k with minimum error is chosen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/k_value_vs_error.png&quot; alt=&quot;errorvsk&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;color:grey; text-align:center; font-style:italic&quot;&gt; Fig. 5.1: Error versus K-value&lt;/p&gt;
+
+&lt;p&gt;Fig. 5. 1 shows the fluctuation of error at different values of
+k and the graph is not continuous. We would rather prefer to
+calculate minimum error k-value than maximum error k-value
+as minimum error k-value gives more accurate prediction. The
+minimum error of k-NN classifier model for test set is at 𝑘 =
+12 and the error is 0.0467 (i.e. 4.67%). Hence, 𝑘 = 12 is chosen
+as k-value for k-NN classifier. The performance metrics of kNN classifier with parameters metric as ‘minkowski’,
+neighbors as ‘12’are:&lt;/p&gt;
+
+&lt;p&gt;Confusion matrix: [[136 6] &lt;br /&gt;
+$\qquad$ $\qquad$ $\qquad$ [8 150]],&lt;br /&gt;
+Precision for label ‘0’ prediction: 0.94, &lt;br /&gt;
+Precision for label ‘1’ prediction: 0.96, &lt;br /&gt;
+Recall for label ‘0’ prediction: 0.96, &lt;br /&gt;
+Recall for label ‘1’ prediction: 0.95, &lt;br /&gt;
+F1-score for label ‘0’ prediction: 142, &lt;br /&gt;
+F1-score for label ‘1’ prediction: 158, &lt;br /&gt;
+Accuracy: 0.95 &lt;br /&gt;
+The model has classified the labels with 𝑇𝑃 = 136,𝐹𝑁 =
+6, 𝐹𝑃 = 8, 𝑇𝑁 = 150 that means model misclassified 6 labels
+as label ‘1’ which is actually label ‘0’ and misclassified 8 labels as label ‘0’ which is actually label ‘1’. Hence, the model has an accuracy of about 95%.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/heat_map.jpg&quot; alt=&quot;heatmap&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;color:grey; text-align:center; font-style:italic&quot;&gt; Fig. 5.2: Heat map predicted label over the true label&lt;/p&gt;
+
+&lt;p&gt;Fig. 5. 2 Heat map predicted label over the true label
+Heat map is a graphical representation of value in the
+confusion matrix obtained from the predicted label and actual
+target name. In the above heatmap, the red square denotes the
+maximum value on the confusion matrix and with a decrease in
+value the color fades up. Diagonal elements have a higher value
+as shown in the heatmap which shows a higher performance of
+the classification model and informs predicated label matches
+the true label for any given input.&lt;/p&gt;
+
+&lt;p&gt;For the given model, “prime minister of nepal” supplied as
+input assign a label “talk.politics.mideast” similarly , when
+“joker” is supplied as input assign a label
+“comp.sys.ibm.pc.hardware”. Here for two different input two
+different label has been assigned out of which one label
+assigned for the input “prime minister of nepal” is correct
+whereas for “joker” correct label has not been assigned
+properly which is due to naïve base treating the input as
+independent values as well as lack of data being supplied.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The two popular classifiers k-NN and Naïve Bayes provide
+good accuracy to the model. Many parameters contribute to
+model performance. The right choice of hyperparameter also
+yields a better result. There is no rule of thumb to select the right
+value of hyperparameter for the first trial and the
+hyperparameter value that works fine for one model may not
+yield the same result for another model. The good model is that
+which considers all the performance metric parameters like
+Accuracy, F1-score, Precision, Recall, etc. Though we have so
+many metrics parameters to evaluate the model performance,
+some analytics is needed to better explain the metric that
+addresses classification problems in the best possible way. The
+contribution of all performance metrics needs to be analyzed to
+make the model accurate.&lt;/p&gt;
+
+&lt;h2 id=&quot;appendix&quot;&gt;Appendix&lt;/h2&gt;
+&lt;h3 id=&quot;a-k-nn-classifier&quot;&gt;A. k-NN classifier&lt;/h3&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Importing the libraries&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.metrics&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;classification_report&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;confusion_matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;accuracy_score&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.model_selection&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train_test_split&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.neighbors&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KNeighborsClassifier&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.preprocessing&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StandardScaler&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Importing the dataset&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'datasets/Dataset_1.csv'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index_col&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Quick look at data&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Standardizing the variables&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;scaler&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StandardScaler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;scaler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;drop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'TARGET CLASS'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;scaled_features&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scaler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;drop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'TARGET&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;CLASS'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;df_feat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DataFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scaled_features&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# After standardization&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df_feat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# train test split&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train_test_split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;scaled_features&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'TARGET CLASS'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;random_state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Initializing error and k_value list&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;k_value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;k_value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# Using KNN&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;knn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KNeighborsClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_neighbors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;knn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;knn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;error_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;accuracy_score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Plotting k_value and error&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k_value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'K value'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Error'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;savefig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'k_value_vs_erro.png'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dpi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bbox_inches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tight&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;performance_report&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;n_neighbors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# k-NN classifier&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;knn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KNeighborsClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_neighbors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_neighbors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;knn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;knn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;confusion_matrix_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confusion_matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;classification_report_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;classification_report&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'confusion_matrix'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confusion_matrix_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'classification_report'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;classification_report_&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# to numpy&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;error_np&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;k_value_np&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k_value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;error_min_index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error_np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argmin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# numpy int to&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;k_value_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k_value_np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error_min_index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'K= {} and error= {}'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k_value_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;error_np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k_value_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# for minimum error&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;performance_report_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;performance_report&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_neighbors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k_value_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'For k = {}: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; {}{}'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k_value_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;performance_report_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'confusion_matrix'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;performance_report_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'classification_report'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;b-naïve-bayes-classifier-1&quot;&gt;B. Naïve Bayes classifier&lt;/h3&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Importing the libraries&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;seaborn&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sklearn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datasets&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;impor&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.datasets&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fetch_20newsgroups&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.feature_extraction.text&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TfidfVectorizer&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.metrics&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confusion_matrix&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.naive_bayes&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MultinomialNB&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.pipeline&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;make_pipeline&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# importing the dataset&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fetch_20newsgroups&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target_names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# training the data on these categories&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;categories&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target_names&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;train&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fetch_20newsgroups&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'train'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fetch_20newsgroups&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'test'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Pipelining the model&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;make_pipeline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TfidfVectorizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;MultinomialNB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Fitting the data&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# heatmap&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;mat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confusion_matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;heatmap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;annot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'d'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cbar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yticklabels&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target_names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'true label'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'predicted label'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# plt.tight_layout()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;savefig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'images/lab04/heat_map.jpg'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dpi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bbox_inches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tight&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# predicting&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;predict_category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target_names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# prediction&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict_category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Jesus christ'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict_category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Prime minister of Nepal'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict_category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Everest'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;P. Tan, M. Steinbach, V. Kumar and A. Karpatne, Introduction to Data
+Mining, Global Edition. Harlow, United Kingdom: Pearson Education
+Limited, 2019.&lt;/li&gt;
+  &lt;li&gt;A. Burkov, The hundred-page machine learning book, Global Edition.
+Quebec City, Canada, 2019.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Sudip Bhujel</name></author><category term="datamining" /><category term="datascience" /><category term="machinelearning" /><summary type="html">I. Introduction Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/knnandnaivebayes.png" /></entry><entry><title type="html">Data Mining Parameters</title><link href="http://localhost:4000/journal/data-mining-parameters.html" rel="alternate" type="text/html" title="Data Mining Parameters" /><published>2019-12-28T00:00:00+05:45</published><updated>2019-12-28T00:00:00+05:45</updated><id>http://localhost:4000/journal/data-mining-parameters</id><content type="html" xml:base="http://localhost:4000/journal/data-mining-parameters.html">&lt;p&gt;Datamining covers everything that are related with the data from collection of raw data to EDA and preparation of input to AI algorithm. We have lots of parameters for describing the data. Some of them we are going to discuss are Impurity index, Central of tendency, Eigenvalue/ Eigenvector, PCA in Classification. &lt;br /&gt;
  &lt;strong&gt; Abstract: &lt;i&gt; The impurities measurement parameter of dataset
 like Entropy, Gini, Classification Error aims to find the error while classifying the labels. The attribute with less value of impurity will be chosen out of attribute contenders. The measure
 of central tendency like mean, median, quartiles, etc. along with boxplot gives the idea about the distribution of data and outliers which leads then how to treat the data to get the most information
