@@ -5,37 +5,41 @@ author: "Sudip Bhujel"
 categories: journal
 tags: [datamining, datascience, machinelearning]
 image: knnandnaivebayes.png
+toc:
+  sidebar: left
 ---
 
-# I. Introduction
-Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result. 
+## I. Introduction
 
-Classification, which is the task of assigning objects to one of several predefined categories, is a pervasive problem that encompasses many diverse applications. Examples include detecting spam email messages based upon the message header and content, categorizing cells as malignant or benign based upon the results of MRI scans, and classifying galaxies based upon their shapes. 
+Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. The machine learning is classified into different categories viz. supervised machine learning, unsupervised learning, semi-supervised learning, and reinforcement machine learning. The supervised learning algorithm takes features as input, maps to a mapping function and approximates a result. The goal is to approximate the mapping function so well that when it gets new input that it can predict the output variables for that data. The supervised learning algorithm aims to find the pattern of the features to a particular result.
 
-The classification problems like email is spam or not, tumor is benign or malignant, etc. are binary classification as it deals with two categories in the target class. When there are more than two categories in the target class, the classification problem resides to multilabel classification and example might be like classifying cars company based on image whether it is Honda or Volkswagen or Renault.   
+Classification, which is the task of assigning objects to one of several predefined categories, is a pervasive problem that encompasses many diverse applications. Examples include detecting spam email messages based upon the message header and content, categorizing cells as malignant or benign based upon the results of MRI scans, and classifying galaxies based upon their shapes.
+
+The classification problems like email is spam or not, tumor is benign or malignant, etc. are binary classification as it deals with two categories in the target class. When there are more than two categories in the target class, the classification problem resides to multilabel classification and example might be like classifying cars company based on image whether it is Honda or Volkswagen or Renault.
 
 The classification algorithm k-Nearest Neighbors classifier and Naïve Bayes classifier are two classifiers that better suits the classification problem. The performance metrics like Confusion matrix, Accuracy, F1 score, Precision, Recall, Heatmap, etc. gives the insight of model performance.
 
 ## II. Algorithms
-The convention used in the derivation includes a collection of labeled examples 
-$$ \{(x_i,yi)\}_{i=1}^N $$
+
+The convention used in the derivation includes a collection of labeled examples
+$$ \{(x*i,yi)\}*{i=1}^N $$
 , where N is the size of the collection, 
-$$x_i$$ is the D-dimensional feature vector of example 
-$$ i=1, 2, …, N $$ , $$y_i$$ is a real-valued target and every feature 
-$$ x_i^{(j)} $$ 
-, 
+$$x_i$$ is the D-dimensional feature vector of example
+$$ i=1, 2, …, N $$ , $$y_i$$ is a real-valued target and every feature
+$$ x_i^{(j)} $$
+,
 $$ j=1, 2, …, D $$
-, is also a real number. 
+, is also a real number.
 
-### A. k-Nearest Neighbors Classifier 
+### A. k-Nearest Neighbors Classifier
 
-k-Nearest Neighbors (kNN) is non parametric and instance-based learning algorithm. Contrary to other learning algorithms, it keeps all training data in memory. Once new, previously unseen example comes in, the kNN algorithm finds k training examples closest to x and returns the majority label. 
+k-Nearest Neighbors (kNN) is non parametric and instance-based learning algorithm. Contrary to other learning algorithms, it keeps all training data in memory. Once new, previously unseen example comes in, the kNN algorithm finds k training examples closest to x and returns the majority label.
 
-The closeness of two examples is given by a distance function. For example, Euclidean distance is frequently used in practice. Euclidean distance between 
+The closeness of two examples is given by a distance function. For example, Euclidean distance is frequently used in practice. Euclidean distance between
 $$ x_i $$
  and 
 $$ x_k $$
- is given as, 
+is given as,
 
 $$
 d(\boldsymbol {x_i, x_k}) = \sqrt{(x_i^{(1)}-x_k^{(1)})^2 + (x_i^{(2)}-x_k^{(2)})^2 + ... + (x_i^{(N)}-x_k^{(N)})^2} \tag1
@@ -47,7 +51,7 @@ $$
 d(\boldsymbol {x_i, x_k}) = \sqrt{\sum_{j=1}^{D}(x_i^{(j)}-x_k^{(j)})^2} \tag2
 $$
 
-Another popular choice of the distance function is the negative cosine similarity. Cosine similarity defined as, 
+Another popular choice of the distance function is the negative cosine similarity. Cosine similarity defined as,
 
 $$
 s(\boldsymbol {x_i, x_k})=\frac{\sum_{j=1}^{D}x_i^{(j)}x_k^{(j)}}{\sqrt{\sum_{j=1}^{D}(x_i^{(j)})^2}\sqrt{\sum_{j=1}^{D}(x_k^{(j)})^2}} \tag3
@@ -74,8 +78,7 @@ votes to classify the labels among selected k-neighbors. It
 returns the majority class labels leaving behind minority. The
 flowchart of the k-NN classifier is;
 
-<p align="center"><img src="/assets/img/datamining-KNN.png" alt= "datamining-knn" style="height: 50rem;"></p>
-<p style="color:grey; text-align:center; font-style:italic"> Fig. 1.1: k-NN flowchart</p>
+{% include figure.html path="assets/img/datamining-KNN.png" style="height: 50rem;" caption="Fig. 1.1: k-NN flowchart" alt="datamining-knn" %}
 
 The selection of the hyperparameter k has a significant effect
 on the classifier. In general, for the lower value of k, the
@@ -94,6 +97,7 @@ value of k is plotting error versus k graph and choosing the k on
 which error is minimum.
 
 ### B. Naïve Bayes Classifier
+
 Bayes’ Rule or Bayes’ Theorem is a statistical principle for
 combining prior knowledge of the classes with new evidence
 gathered from data. The class-conditional probability 𝑃(𝑋|𝑌),
@@ -122,14 +126,15 @@ $$
 𝑃(\boldsymbol{X}|𝑌 = 𝑦) = \prod_{i=1}^d𝑃(𝑋_𝑖|𝑌 = 𝑦)\tag5
 $$
 
-Where each attribute set $$ \boldsymbol{X} = \{𝑋_1
-,𝑋_2, … ,𝑋_𝑑\} $$ consists of d
+Where each attribute set $$ \boldsymbol{X} = \{𝑋*1
+,𝑋_2, … ,𝑋*𝑑\} $$ consists of d
 attributes.
 The Naïve Bayes is also called Simple Bayes as it assumes
 that features of a measurement are independent of each other
 and makes equal contribution to the outcome.
 
 ## III. METRICS
+
 The classifier model doesn’t always give the accurate result.
 There are some parameters to measure how the classifier
 behave with unseen data to classify like Confusion matrix,
@@ -142,6 +147,7 @@ model. An important aspect of evaluation metrics is their
 capability to discriminate among model results.
 
 ### A. Confusion Matrix
+
 The confusion matrix is a table that summarizes how
 successful the classification model is at predicting examples
 belonging to various classes. One axis of the confusion matrix
@@ -151,7 +157,7 @@ classes. Let’s say, the model predicts two classes: “spam” and
 “not_spam”:
 
 $$
-\begin{array} {|r|r|}\hline  & & spam (predicted) & not_spam(predicted) \\ \hline & spam (actual)& 23 (TP) & 1 (FN) \\ \hline & not_spam (actual) & 12 (FP) & 556(TN) \\ \hline  \end{array} 
+\begin{array} {|r|r|}\hline  & & spam (predicted) & not_spam(predicted) \\ \hline & spam (actual)& 23 (TP) & 1 (FN) \\ \hline & not_spam (actual) & 12 (FP) & 556(TN) \\ \hline  \end{array}
 $$
 
 The above confusion matrix shows that of the 24 examples
@@ -164,6 +170,7 @@ classified (556 true negatives or TN = 556), and 12 were
 incorrectly classified (12 false positives, FP = 12).
 
 ### B. Precision/Recall
+
 The two most frequently used metrics to assess the model are
 precision and recall. Precision is the ratio of correct positive
 predictions to the overall number of positive predictions:
@@ -189,6 +196,7 @@ The hyperparameter tuning helps to maximize precision or
 recall.
 
 ### C. Accuracy
+
 Accuracy is given by the number of correctly classified
 examples divided by the total number of classified examples. In
 terms of the confusion matrix, it is given by:
@@ -201,6 +209,7 @@ Accuracy is a useful metric when errors in predicting all
 classes are equally important.
 
 ### D. F1 Score
+
 F1-Score is the harmonic mean of precision and recall values
 for a classification problem. The formula for F1-Score is as
 follows:
@@ -225,6 +234,7 @@ The equation (11) or $$ 𝐹_𝛽 $$ measures the effectiveness of a model with 
 to a user who attaches β times as much importance to recall as precision.
 
 ### E. Heat Map
+
 The heat map can be elucidated as a cross table or spreadsheet
 which contains colors instead of numbers. The default color
 gradient sets the lowest value in the heat map to dark blue, the
@@ -236,13 +246,13 @@ clusters of rows with similar values, as these are displayed as
 areas of similar color.
 
 ## IV. RESULT
+
 The value of hyperparameter like k in the k-NN classifier
 plays a significant role to correctly classify the labels or target
 variables. The error versus k values plot provides a guideline to
 choose k and the value of k with minimum error is chosen.
 
-![errorvsk](/assets/img/k_value_vs_error.png)
-<p style="color:grey; text-align:center; font-style:italic"> Fig. 5.1: Error versus K-value</p>
+{% include figure.html path="assets/img/k_value_vs_error.png" class="img-fluid" caption="Fig. 5.1: Error versus K-value" %}
 
 Fig. 5. 1 shows the fluctuation of error at different values of
 k and the graph is not continuous. We would rather prefer to
@@ -266,8 +276,7 @@ The model has classified the labels with 𝑇𝑃 = 136,𝐹𝑁 =
 6, 𝐹𝑃 = 8, 𝑇𝑁 = 150 that means model misclassified 6 labels
 as label ‘1’ which is actually label ‘0’ and misclassified 8 labels as label ‘0’ which is actually label ‘1’. Hence, the model has an accuracy of about 95%.
 
-![heatmap](/assets/img/heat_map.jpg)
-<p style="color:grey; text-align:center; font-style:italic"> Fig. 5.2: Heat map predicted label over the true label</p>
+{% include figure.html path="assets/img/heat_map.jpg" class="img-fluid" caption="Fig. 5.2: Heat map predicted label over the true label" %}
 
 Fig. 5. 2 Heat map predicted label over the true label
 Heat map is a graphical representation of value in the
@@ -290,6 +299,7 @@ properly which is due to naïve base treating the input as
 independent values as well as lack of data being supplied.
 
 ## Conclusion
+
 The two popular classifiers k-NN and Naïve Bayes provide
 good accuracy to the model. Many parameters contribute to
 model performance. The right choice of hyperparameter also
@@ -306,7 +316,9 @@ contribution of all performance metrics needs to be analyzed to
 make the model accurate.
 
 ## Appendix
+
 ### A. k-NN classifier
+
 ```python
 # Importing the libraries
 import matplotlib.pyplot as plt
@@ -392,6 +404,7 @@ performance_report_['classification_report']))
 ```
 
 ### B. Naïve Bayes classifier
+
 ```python
 # Importing the libraries
 import matplotlib.pyplot as plt
@@ -447,8 +460,9 @@ print(predict_category('Everest'))
 ```
 
 ## References
+
 - P. Tan, M. Steinbach, V. Kumar and A. Karpatne, Introduction to Data
-Mining, Global Edition. Harlow, United Kingdom: Pearson Education
-Limited, 2019.
+  Mining, Global Edition. Harlow, United Kingdom: Pearson Education
+  Limited, 2019.
 - A. Burkov, The hundred-page machine learning book, Global Edition.
-Quebec City, Canada, 2019.
+  Quebec City, Canada, 2019.
